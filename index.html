@@ -1,75 +1,99 @@
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="StyleSheet" href="./css/style.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-</head>
-
-<body>
-    <header>
-        <h1>MySite</h1>
-        <h3>Slogan go here...</h3>
-    </header>
-    <nav>
-        <ul>
-            <li><a data-section="home">Home</a></li>
-            <li><a data-section="services">Services</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Products</a>
-                <div class="dropdown-content">
-                    <a data-section="link1">Link 1</a>
-                    <a data-section="link2">Link 2</a>
-                    <a data-section="link3">Link 3</a>
+<html>
+    <head>
+	  <meta charset="utf-8"/>
+	  <title>Tiếng anh pascal</title>
+		
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	  <style>
+	 
+	   .menu ul {
+	   background: -webkit-linear-gradient(45deg, #eb4d37, #f17e38);
+	   width: 100%;
+	   height:90px;
+	   padding-top:25px;
+	   
+	   }
+	    
+	   .menu ul li{
+	   float: left;
+	   list-style: none;
+	   padding:10px;
+	   line-height:20px;
+	   }
+	   .menu ul li a
+	   {
+			color:white;
+			text-transform:uppercase;
+			font-weight:bold;
+			font-size:19px;
+			
+	    }
+	   ul li a:hover
+	   {
+	 	text-decoration:none;
+		color:White;
+	   }
+	    .content2 {    
+      background: #fbe876;
+	  border: 3px solid #CCCCCC;
+      }
+	 .a_content2 {
+        margin: 15px auto 15px;
+        text-align: center;
+		}
+		 .vtv {
+          display: inline-block;
+		  margin-right: 5px;
+          
+		  }
+	   
+	  </style>
+	</head>
+    <body>
+	   <div class="container" >
+	      <div class="menu">		   
+		   <ul>
+		     <li><a href="#"><img src="images/1.png" style="width:80%;height:55px;margin-left:-10px;margin-top:-10px; "></a></li>
+		     <li><a href="#">TRANG CHỦ</a></li>
+			 <li><a href="#">GIỚI THIỆU</a></li>
+			 <li><a href="#">KHOÁ HỌC</a></li>
+			 <li><a href="#">TEST ONLINE</a></li>
+			 <li><a href="#">TIN TỨC</a></li>
+			 <li><a href="#">LIÊN HỆ</a></li>
+		   </ul>		   
+		  </div>
+	   <!--nội dung-->
+	    <div class="content">
+             <div class="content1">
+                <img class="img1" src="images/baner.png"style="width:100%;margin-top:-10px;height:470px"  alt="">
+             </div>
+        </div>
+		  <!--liên kết ngoài-->
+			<div class="content2">            
+                <div class="a_content2">
+                    <div class="vtv">
+                        <a href=""><img class="img2_1" src="images/img1.png"></a>
+                    </div>
+                    <div class="vtv">
+                        <a href=""><img class="img2_1" src="images/img2.png"></a>
+                    </div>
+                    <div class="vtv">
+                        <a href=""><img class="img2_1" src="images/img3.png"></a>
+                    </div>
+                    <div class="vtv">
+                        <a href=""><img class="img2_1" src="images/img4.png"></a>
+                    </div>
+                    <div class="vtv">
+                        <a href=""><img class="img2_1" src="images/img5.png"></a>
+                    </div>
+                    <div class="vtv">
+                        <a href=""><img class="img2_1" src="images/img6.png"></a>
+                    </div>
+                    <div class="vtv">
+                        <a href=""><img class="img2_1" src="images/img7.png"></a>
+                    </div>
                 </div>
-            </li>
-            <li style="float:right"><a data-section="about">About us</a></li>
-        </ul>
-    </nav>
-
-    <section id="home" class="hideable-section">
-        <div>Home content</div>
-    </section>
-
-    <section id="services" class="hideable-section">
-        <div>Services content</div>
-    </section>
-
-    <section id="about" class="hideable-section">
-        <div>About content</div>
-    </section>
-
-    <section id="link1" class="hideable-section">
-        <div>Link1 content</div>
-    </section>
-
-    <section id="link2" class="hideable-section">
-        <div>Link2 content</div>
-    </section>
-
-    <section id="link3" class="hideable-section">
-        <div>Link3 content</div>
-    </section>
-
-    <script>
-        $(function() {
-            $('nav ul li a').click(function() {
-                // Lấy section để hiển thị
-                var $section = $('#' + $(this).data('section'));
-
-                // Nếu đang hiện thì không làm gì.
-                // Nếu không, ẩn tất cả các se cho hiện (kiểu fade in) phần mong muốn.
-                if (!$section.is(':visible')) {
-                    $('.hideable-section').hide();
-                    $section.fadeIn();
-                }
-            });
-        });
-    </script>
-</body>
-
+            </div>
+	    </div>
+	<body>
 </html>
