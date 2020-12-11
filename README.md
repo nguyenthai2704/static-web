@@ -1,2 +1,3 @@
 # landingpage
-<img src="./images/giaodien.png>
+<p> đây là giao diện web</p>
+<img src="./images/giaodien.png />
